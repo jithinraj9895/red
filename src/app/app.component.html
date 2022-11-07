@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+  </div>
+</nav>
+
+<div class="container col-lg">
+  <div class="d-flex justify-content-center">
+    <div class="p-2">
+
+      <div class="d-flex flex-column">
+        <div class="p-2"><h1>Team 1</h1></div>
+        <div class="p-2">Flex item 2</div>
+      </div>
+
+    </div>
+    <div class="p-2"><img src="https://i.ibb.co/RHHfh54/logo.png" height="100px" width="100px"></div>
+    <div class="p-2">
+      <div class="d-flex flex-column">
+        <div class="p-2"><h1>Team 2</h1></div>
+        <div class="p-2">Flex item 2</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
