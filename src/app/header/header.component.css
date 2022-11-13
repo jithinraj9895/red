@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+*{
+    font-family: 'Comfortaa', cursive
+}
+
+button{
+    color: cadetblue;
+    background-color:white
+}
+
+
+li{
+    display: inline-block;
+}
+
+.navbar-nav{
+    display: flex;
+}
+
+/* Modify the background color */
+.navbar-custom {
+	background-image: url("img/svn.jpg");
+}
+
+a{
+    color: white
+}
+
+.navBack{
+    background-image: url("img/svn.jpg");
+}
+
+.container{
+    background-color: rgb(255, 247, 233);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+#col{
+    border-color: black;
+}
+
+.flex-item {
+    border: 1px solid rgb(0, 0, 0);
+    transition: .7s;
+}

@@ -1,0 +1,68 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-custom">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+</nav> -->
+<div class = "navBack">
+    <div class="d-flex justify-content-center">
+        <div class="p-2">
+            <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+        </div>
+        <div class="p-2"> <a class="nav-link" routerLink="/">News</a></div>
+        <div class="p-2"> <a class="nav-link" href="#">About</a></div>
+    </div>
+</div>
+
+
+
+
+<div class="container col-lg col-md col-sm">
+  <div class="d-flex justify-content-center">
+    <div class="p-2">
+
+      <div class="d-flex flex-column">
+        <div class="p-2"><h3>{{team1}}  v  {{team2}}</h3></div>
+        <div class="p-2">{{fixt}}</div>
+      </div>
+
+    </div>
+    <div class="p-2">
+
+      <div class="d-flex flex-column">
+        <div class="p-2"><h3>{{team3}}  v  {{team4}}</h3></div>
+        <div class="p-2">{{fixt2}}</div>
+      </div>
+
+    </div>
+
+    <div class="p-2"><img src="https://i.ibb.co/RHHfh54/logo.png" height="100px" width="100px"></div>
+    
+    <div class="p-2">
+
+      <div class="d-flex flex-column">
+        <div class="p-2"><h3>{{team5}}  v  {{team6}}</h3></div>
+        <div class="p-2">{{fixt3}}</div>
+      </div>
+
+    </div>
+
+    <div class="p-2">
+
+      <div class="d-flex flex-column">
+        <div class="p-2"><h3>{{team7}}  v  {{team8}}</h3></div>
+        <div class="p-2">{{fixt4}}</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
