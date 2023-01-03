@@ -38,6 +38,7 @@ export class HeaderComponent implements OnInit {
     console.log("inside dets");
     this.http.get<any>(this.url).subscribe(data=>{
 
+      console.log(data);
       this.team1 = data.matches[0].homeTeam.tla;
       this.team2 = data.matches[0].awayTeam.tla;
       this.fixt = data.matches[0].competition.name;
@@ -54,7 +55,7 @@ export class HeaderComponent implements OnInit {
       this.team8 = data.matches[3].awayTeam.tla;
       this.fixt4 = data.matches[3].competition.name;
 
-      console.log(data.matches);
+      
     },error=>{
       console.log("damn it eror");
     })

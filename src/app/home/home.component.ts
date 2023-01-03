@@ -7,13 +7,21 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
 
-  url:string = "https://api.football-data.org/v4/matches/";
-  
+  url:string = "http://localhost:8989/articles";
+  burl:string = ""
+  arr:any;
 
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-   
+   this.getAllarcticles();
+  }
+
+  getAllarcticles(){
+    this.http.get(this.url).subscribe(data=>{
+        this.arr = data;
+        console.log(this.arr[1].title);
+    })
   }
 
 
