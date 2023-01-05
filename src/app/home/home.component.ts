@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
 
-  url:string = "http://localhost:8989/articles";
+  url:string = "https://sevensbackend-production.up.railway.app/articles";
   burl:string = ""
   arr:any;
 

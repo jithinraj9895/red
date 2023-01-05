@@ -4,3 +4,7 @@
     font-family: 'Comfortaa', cursive
 }
 
+div {
+    display: flexbox;
+    justify-content: center;
+}
